@@ -38,13 +38,62 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222222,  
+  
+  mygrey:     grey,
+  energized:  #ffc527,
+  royal:      #7e60ff,
+  subtle:     #444444,
+  vibrant:    rebeccapurple,
+  bright:     #ffc125,
+
+  beauty1:    #60bdaf,
+  beauty2:    #a1d8b1,   
+  beauty3:    #edfcc2,
+  beauty4:    #f88aaf,
+  beauty5:    #92A2A1,
+
+  warm1:      #fdf1d9,    
+  warm2:      #c0a286,
+  warm3:      #a6af76,
+  warm4:      #d4c69c,
+  warm5:      #e4ab7e,
+  
+  chrome1:    #D3CFCF,
+  chrome2:    #b65070,
+  chrome3:    #e5574f,
+  chrome4:    #f08664,
+  chrome5:    #fccb87,
+  chrome6:    #dbe6a2,
+  chrome7:    #88bfb1
+
 );
+
+//tabs color
+
+// $tabs-ios-tab-text-color: grey;  
+// $tabs-ios-tab-text-color-active : #32db64;  
+// $tabs-ios-tab-icon-color : grey;  
+// $tabs-ios-tab-icon-color-active : #32db64;  
+$tabs-md-tab-text-color: grey;  
+$tabs-md-tab-text-color-active : #32db64;  
+$tabs-md-tab-icon-color : grey;  
+$tabs-md-tab-icon-color-active : #32db64;  
+
+//bgcolor
+$list-border-color:grey;
+$list-background-color:white;
+
+$tabs-background:white;
+
+
+$background-color:#f5f5f5;
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+
 
 
 

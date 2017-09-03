@@ -1,0 +1,72 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>about</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content>
+  <div class="background">
+    <!-- <img src="assets/img/bg.jpg" alt="背景图"> -->
+    <span>我</span>
+    <ion-icon name="ios-settings-outline" color="light" class="iconSetting"></ion-icon>
+    <div (click)="showLogin()">
+      <img src="assets/img/bg.jpg" alt="头像" class="imgRadius">
+      <span>登录，做个学霸~ </span>
+    </div>
+    <ion-icon name="ios-ribbon" color="light" class="iconPrize"></ion-icon>
+  </div>
+  <div class="myGrid">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>
+          <ion-icon name="md-archive" color="beauty1"></ion-icon>
+        </ion-col>
+        <ion-col col-3>
+          <ion-icon name="heart" color="beauty4"></ion-icon>
+        </ion-col>
+        <ion-col col-3>
+          <ion-icon name="md-pie" color="beauty2"></ion-icon>
+        </ion-col>
+        <ion-col col-3>
+          <ion-icon name="notifications" color="energized"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>
+          <span>缓存</span></ion-col>
+        <ion-col col-3>
+          <span>收藏</span></ion-col>
+        <ion-col col-3>
+          <span>历史</span></ion-col>
+        <ion-col col-3>
+          <span>提醒</span></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="myList">
+    <ion-list>
+      <!-- <ion-item >单个列表
+      <ion-icon name="ios-arrow-forward"  item-right></ion-icon>
+  </ion-item> -->
+      <button ion-item>我关注的全部订阅号
+        <ion-icon name="ios-arrow-forward" color="beauty5" item-end></ion-icon>
+      </button>
+      <button ion-item>我的一万分钟
+        <ion-icon name="ios-clock-outline" color="chrome5" padding-left></ion-icon>
+        <ion-icon name="ios-arrow-forward" color="beauty5" item-end></ion-icon></button>
+    </ion-list>
+    <ion-list>
+      <ion-item>动态<button ion-button item-end color="secondary">发表</button> </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,61 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-left>登录</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- 
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+  </ion-list> -->
+  <ion-list>
+    <button ion-item block outline no-lines>
+      <ion-input type="text" placeholder="邮箱账号或手机号"></ion-input>
+  </button>
+  </ion-list>
+  <ion-list>
+    <button ion-item block outline no-lines>
+      <ion-input type="password" placeholder="密码"></ion-input>
+      <span item-right class="pw-forgot">忘记密码</span>
+  </button>
+  </ion-list>
+  <ion-list padding-top>
+    <button ion-item block color="chrome1" border class="btn-login" (click)="login()">完成</button>
+  </ion-list>
+  <span item-right class="register-quick" float-right padding-bottom >手机号快速注册</span>
+  <ion-grid no-padding padding-top >
+    <ion-row>
+      <ion-col col-5.5>
+        <button ion-item block outline no-lines class="wb-wx-btn-login">
+          <ion-icon name="heart" color="danger"></ion-icon>
+            微博登录
+        </button>
+      </ion-col>
+      <ion-col col-1></ion-col>
+      <ion-col col-5.5 >
+        <button ion-item block outline no-lines class="wb-wx-btn-login">
+          <ion-icon name="heart" color="secondary"></ion-icon>
+            微信登录
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
