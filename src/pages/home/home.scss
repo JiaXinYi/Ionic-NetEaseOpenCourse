@@ -1,3 +1,36 @@
 page-home {
-
+  .search-div {
+    width: 100%;
+    height: 48x;
+    border-bottom: 1px solid gray;
+  }
+  .search-bar {
+	padding: 0;
+    float: left;
+    width: 90%;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .icon-right {
+    float: left;
+	padding: 0;
+	color: gray;
+	font-size:36px;
+  }
+  .slide-img{
+	  width: 100%;
+	  height:160px;
+  }
+  ion-slides,
+  .swiper-container {
+    height: 100%;
+    width: auto;
+  }
+  .swiper-slide {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
 }

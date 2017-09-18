@@ -4,15 +4,64 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>home</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
+<ion-content>
 
-<ion-content padding>
-
+  <div class="search-div">
+    <ion-item no-lines>
+      <ion-searchbar class="search-bar" 
+                     placeholder="自我恢复能力"
+                     no-padding
+                     (ionFocus)="showSearch()">
+      </ion-searchbar>
+      <ion-icon name="ios-alarm-outline" class="icon-right" item-end (click)="show()"></ion-icon>
+      <ion-icon name="ios-download-outline" class="icon-right" item-end (click)="show()"></ion-icon>
+    </ion-item>
+  </div>
+  <div class="slide-img">
+    <ion-slides #slider pager autoplay="2000" loop="true" (ionSlideDidChange)="onSlideChanged()" dir="ltr">
+      <ion-slide *ngFor="let slide of slides"
+                  [ngStyle]="{'background':'url(' +slide.imageUrl+')'}">
+        <h2>{{slide.title}}</h2>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="classify">
+    <div class="myGrid">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+            <ion-icon name="md-archive" color="beauty1"></ion-icon>
+          </ion-col>
+          <ion-col col-3>
+            <ion-icon name="heart" color="beauty4"></ion-icon>
+          </ion-col>
+          <ion-col col-3>
+            <ion-icon name="md-pie" color="beauty2"></ion-icon>
+          </ion-col>
+          <ion-col col-3>
+            <ion-icon name="notifications" color="energized"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <span>最热</span></ion-col>
+          <ion-col col-3>
+            <span>最新</span></ion-col>
+          <ion-col col-3>
+            <span>直播</span></ion-col>
+          <ion-col col-3>
+            <span>分类</span></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <div class="parts-sift"></div>
 </ion-content>

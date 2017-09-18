@@ -9,5 +9,6 @@ import { OrderPage } from './order';
   imports: [
     IonicPageModule.forChild(OrderPage),
   ],
+  exports:[OrderPage]
 })
 export class OrderPageModule {}
