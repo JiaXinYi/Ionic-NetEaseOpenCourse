@@ -60,5 +60,5 @@ export class HomePage {
     const currentIndex = this.slider.getActiveIndex();
     console.log(currentIndex);
   }
-}y
+}
 

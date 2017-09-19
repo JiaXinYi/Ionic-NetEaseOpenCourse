@@ -16,10 +16,7 @@
 
   <div class="search-div">
     <ion-item no-lines>
-      <ion-searchbar class="search-bar" 
-                     placeholder="自我恢复能力"
-                     no-padding
-                     (ionFocus)="showSearch()">
+      <ion-searchbar class="search-bar" placeholder="自我恢复能力" no-padding (ionFocus)="showSearch()">
       </ion-searchbar>
       <ion-icon name="ios-alarm-outline" class="icon-right" item-end (click)="show()"></ion-icon>
       <ion-icon name="ios-download-outline" class="icon-right" item-end (click)="show()"></ion-icon>
@@ -27,8 +24,7 @@
   </div>
   <div class="slide-img">
     <ion-slides #slider pager autoplay="2000" loop="true" (ionSlideDidChange)="onSlideChanged()" dir="ltr">
-      <ion-slide *ngFor="let slide of slides"
-                  [ngStyle]="{'background':'url(' +slide.imageUrl+')'}">
+      <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background':'url(' +slide.imageUrl+')'}">
         <h2>{{slide.title}}</h2>
       </ion-slide>
     </ion-slides>
@@ -63,5 +59,57 @@
       </ion-grid>
     </div>
   </div>
-  <div class="parts-sift"></div>
+  <hr no-margin>
+  <div class="parts-sift">
+    <ion-item text-center no-lines>
+      <h2>编辑<span class="sift-dot">&nbsp;·&nbsp;</span>精选</h2>
+    </ion-item>
+    <ion-grid  no-margin>
+    <ion-row>
+      <ion-col col-6>
+        <div class="sift-col">
+          <img src="assets/img/slide1.jpeg" alt="tu">
+            <span class="sift-label">视频</span>
+          <ion-item no-lines no-padding no-margin>
+            <span>[经典名著选读]：俳句的颠覆</span>
+            <p>53463人观看</p>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="sift-col">
+          <img src="assets/img/slide1.jpeg" alt="tu">
+          <span class="sift-label">视频</span>
+          <ion-item no-lines no-padding no-margin>
+            <span>[经典名著选读]：俳句的颠覆</span>
+            <p>53463人观看</p>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <div class="sift-col">
+          <img src="assets/img/slide1.jpeg" alt="tu">
+          <span class="sift-label">视频</span>
+          <ion-item no-lines no-padding no-margin>
+            <span>[经典名著选读]：俳句的颠覆</span>
+            <p>53463人观看</p>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="sift-col">
+          <img src="assets/img/slide1.jpeg" alt="tu">
+          <span class="sift-label">视频</span>
+          <ion-item no-lines no-padding no-margin>
+            <span>[经典名著选读]：俳句的颠覆</span>
+            <p>53463人观看</p>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+        
+  </div>
 </ion-content>
