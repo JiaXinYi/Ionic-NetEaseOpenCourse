@@ -12,7 +12,7 @@ import { MyApp } from './app.component';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{ tabsHideOnSubPages: 'true' })
+    IonicModule.forRoot(MyApp, { tabsHideOnSubPages: 'true' })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -21,7 +21,7 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
