@@ -1,111 +1,119 @@
 page-order {
-    .star-bg {
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        background-color:rgba(0,0,0,0.8);
-        .star-btn{
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .star-words{
-        padding-left: 20px;
-        font-size: 20px;
-            position: absolute;
-            bottom: 80px;            
-            color: white;
-        }
-        .star-div{
-            position: absolute;
-        padding-left: 20px;
-        bottom: 40px;
-        div{
-            float: left;
-        }
-        }
-        ion-icon {
-          float: left;
-          font-size: 28px;
-        }
-      }
-      .search-div {
-        width: 100%;
-        height: 48x;
-        border-bottom: 1px solid gray;
-      }
-      .search-bar {
-        padding: 0;
+  .star-bg {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    .star-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .star-words {
+      padding-left: 20px;
+      font-size: 20px;
+      position: absolute;
+      bottom: 80px;
+      color: white;
+    }
+    .star-div {
+      position: absolute;
+      padding-left: 20px;
+      bottom: 40px;
+      div {
         float: left;
-        width: 90%;
-        height: 36px;
+      }
+    }
+    ion-icon {
+      float: left;
+      font-size: 28px;
+    }
+  }
+  .search-div {
+    width: 100%;
+    height: 48x;
+    border-bottom: 1px solid gray;
+  }
+  .search-bar {
+    padding: 0;
+    float: left;
+    width: 90%;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .icon-right {
+    float: left;
+    padding: 0;
+    color: gray;
+    font-size: 36px;
+  }
+  .slide-img {
+    width: 100%;
+    height: 120px;
+  }
+  ion-slides,
+  .swiper-container {
+    height: 100%;
+    width: auto;
+  }
+  .swiper-slide {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+  .myGrid {
+    background: white;
+    ion-grid {
+      padding-bottom: 20px;
+      color: #3C3C3C;
+      text-align: center;
+      font-size: 20px;
+      ion-col {
+        height: 20px;
+      }
+      span {
+        font-size: 12px;
+        color: grey;
+      }
+    }
+  }
+  .parts-order {
+    .order-title {
+      background-color: white;
+      height: 100%;
+      padding-top: 20px;
+      .short-hr {
+        width: 24px;
+      }
+    }
+    .order-cards {
+      background-color: white;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .img-div {
+      background-color: white;
+      padding: 0 20px;
+      .order-img {
         border-radius: 10px;
       }
-      .icon-right {
-        float: left;
-        padding: 0;
-        color: gray;
-        font-size: 36px;
+      .img-words{
+        color:white;
+        padding-left:10px;
+        padding-right:10px;
+        margin-top: -100px;
       }
-      .slide-img {
-        width: 100%;
-        height: 120px;
+    }
+    .span-div {
+      height: 30px;
+      background-color: white;
+      span {
+        color: grey;
+        padding: 0px 20px;
       }
-      ion-slides,
-      .swiper-container {
-        height: 100%;
-        width: auto;
-      }
-      .swiper-slide {
-        background-size: cover !important;
-        background-position: center !important;
-      }
-      .swiper-pagination-bullet {
-        background-color: white;
-      }
-      .myGrid {
-        background: white;
-        ion-grid {
-          padding: 10px 20px 20px;
-          color: #3C3C3C;
-          text-align: center;
-          font-size: 20px;
-          ion-col {
-            height: 22px;
-          }
-          span {
-            font-size: 12px;
-            color: grey;
-          }
-        }
-      }
-      .parts-sift {
-        background-color: white;
-      }
-      .sift-dot {
-        border-bottom: 1px solid grey;
-      }
-      .sift-col {
-        position: relative;
-        ion-item {
-            margin: -24px 0;      
-        }
-        img {
-          border-radius: 6px;
-        }
-        .sift-label{
-          font-size: 10px;
-          color: white;
-          background-color: #3CA33C;
-          border-radius: 2px;
-          padding:2px 3px;
-          position: relative;
-          left: 78%;
-          bottom:28px;
-        }
-        span {
-          font-size: 14px;
-        }
-      }
+    }
+  }
 }

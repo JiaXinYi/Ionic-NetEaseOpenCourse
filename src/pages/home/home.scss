@@ -51,27 +51,48 @@ page-home {
   }
   .parts-sift {
     background-color: white;
+    margin-bottom: 10px;
   }
-  .sift-dot {
-    border-bottom: 1px solid grey;
+  .sift-title {
+    background-color: white;
+    height: 100%;
+    padding-top: 20px;
   }
+  .short-hr {
+    width: 24px;
+  } // .sift-dot {
+  //   border-bottom: 1px solid grey;
+  // }
   .sift-col {
     position: relative;
+    .sift-words {
+      margin-top: -14px;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+      }
+      span{
+        color:grey;
+      }
+    }
     ion-item {
-        margin: -24px 0;      
+      margin: -24px 0;
     }
     img {
       border-radius: 6px;
     }
-    .sift-label{
+    .sift-label {
       font-size: 10px;
       color: white;
       background-color: #3CA33C;
       border-radius: 2px;
-      padding:2px 3px;
+      padding: 2px 3px;
       position: relative;
       left: 78%;
-      bottom:28px;
+      bottom: 28px;
     }
     span {
       font-size: 14px;
