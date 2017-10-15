@@ -1,3 +1,29 @@
 page-class {
-
+  .slide-page {
+    font-size: 18px;
+    position: absolute;
+    left: 46%;
+    bottom: 10px;
+    z-index: 999;
+    color: white;
+  }
+  .img-span {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    background-color: #333333;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    top: 140px;
+	right: 12px;
+	line-height: 30px;
+  }
+  .slider {
+    //   position: absolute;
+    top: -80px !important;
+  }
+  .slide-btn {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
