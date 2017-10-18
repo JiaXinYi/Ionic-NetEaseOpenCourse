@@ -1,0 +1,18 @@
+.dark-theme {
+  ion-content {
+    background-color: #090f2f;
+    color: #fff;
+  }
+  .header .toolbar-background {
+    background-color: #090f2f;
+  }
+  .grid,
+  .sift-title {
+    background-color: #090f2f;
+  } //bgcolor
+  .tab-button {
+    background-color: #090f2f;
+  }
+  $tabs-background:#090f2f;
+  $background-color:grey;
+}
