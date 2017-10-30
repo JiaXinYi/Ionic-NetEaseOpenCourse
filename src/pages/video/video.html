@@ -1,0 +1,40 @@
+<!--
+  Generated template for the VideoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <h1 text-center>旧时光</h1>
+  <video autoplay loop src="assets/video/video1.mp4"></video>
+  <div class="cover"></div>
+
+  <!-- <video src="assets/video/video1.mp4"></video> -->
+  <ion-slides autoplay="1000" pager loop>
+    <ion-slide>
+      <h4>欢迎</h4>
+      <p>时间是真相的女儿</p>
+    </ion-slide>
+    <ion-slide>
+      <h4>介绍</h4>
+      <p>橘生淮南</p>
+    </ion-slide>
+    <ion-slide>
+      <h4>联系</h4>
+      <p>一个橙子</p>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <!-- <ion-col col-2><button ion-button icon-only clear></button></ion-col> -->
+      <ion-col>
+        <button ion-button color="light" full outline>
+          <ion-icon name="heart" color="danger"></ion-icon>
+          <span padding-left>加入我们</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
