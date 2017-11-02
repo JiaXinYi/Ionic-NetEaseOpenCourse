@@ -1,4 +1,4 @@
-import { SettingProvider } from './../../providers/setting/setting';
+import { SettingProvider } from './../../../providers/setting/setting';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
@@ -44,13 +44,11 @@ export class HomePage {
       private: true
     }
   ];
-  selectedTheme: String;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private settings: SettingProvider) {
+    ) {
     // 获取当前主题
-    this.settings.getActiveTheme().subscribe(val => this.selectedTheme = val);
   }
 
   ionViewDidLoad() {
@@ -66,13 +64,6 @@ export class HomePage {
     const currentIndex = this.slider.getActiveIndex();
     // console.log(currentIndex);
   }
-  changeTheme() {
-    if (this.selectedTheme === 'dark-theme') {
-      //改变
-      this.settings.setActiveTheme('light-theme');
-    } else {
-      this.settings.setActiveTheme('dark-theme');
-    }
-  }
+
 }
 

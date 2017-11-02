@@ -10,7 +10,7 @@ import { SettingProvider } from './../providers/setting/setting';
 })
 export class MyApp {
   
-  rootPage:any = "TabsPage";
+  rootPage:any = "StartPage";
   selectedTheme: String;
 
   constructor(

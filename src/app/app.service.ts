@@ -29,22 +29,22 @@ export class AppService {
 		if (loader) {
 			loading.present();
 		}
-		this.http.get(AppGloble.domain + url + this.encode(params))
-			.toPromise()
-			.then(res =>{
-				var d = res.json();
-				if(loader){
-					loading.dismiss();
-				}
-				callback(d==null?"[]":d);
+		// this.http.get(AppGloble.domain + url + this.encode(params))
+		// 	.toPromise()
+		// 	.then(res =>{
+		// 		var d = res.json();
+		// 		if(loader){
+		// 			loading.dismiss();
+		// 		}
+		// 		callback(d==null?"[]":d);
 
-			})
-			.catch(error =>{
-				if(loader){
-					loading.dismiss();
-				}
-				// this.handleError(error);
-			})
+		// 	})
+		// 	.catch(error =>{
+		// 		if(loader){
+		// 			loading.dismiss();
+		// 		}
+		// 		// this.handleError(error);
+		// 	})
 
 	}
 

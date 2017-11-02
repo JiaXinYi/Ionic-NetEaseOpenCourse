@@ -1,0 +1,94 @@
+<!--
+  Generated template for the ContactConsultPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>咨询留意</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let message of messages" class="message-wrapper">
+    
+    <div *ngIf="toUs._id === message.userId">
+      <img [src]="toUs.pic" alt="客服" class="message-pic left">
+      <div class="triangle-left left"></div>
+      <div class="chat-bubble left" >
+        <div class="message"  [innerHTML]="message.text" >
+        </div>
+        <div class="message-detail">
+        </div>
+      </div>
+      <span class="span-name left">{{toUs.username}}</span>
+      
+    </div>
+    <div *ngIf="user._id === message.userId">
+      <img [src]="user.pic" alt="我" class="message-pic right">
+      <div class="triangle-right"></div>
+      <div class="chat-bubble right">
+        <div class="message" [innerHTML]="message.text">
+
+        </div>
+        <div class="message-detail">
+        </div>
+      </div>
+      <span class="span-name right">{{user.username}}</span>                  
+    </div>
+    <div class="cf"></div>
+
+
+  </div>
+
+</ion-content>
+<ion-footer>
+  <form [formGroup]="messageForm" (submit)="send(chatBox)">
+    <ion-item no-lines>
+      <ion-input formControlName="message" [(ngModel)]="chatBox" placeholder="发送咨询信息……"></ion-input>
+      <button ion-button clear (click)="send(chatBox)" item-end>
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-item>
+  </form>
+</ion-footer>
+
+
+
+
+<!-- <ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>姓名</ion-label>
+      <ion-input>
+
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>手机</ion-label>
+      <ion-input>
+
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>邮箱</ion-label>
+      <ion-input>
+
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>QQ</ion-label>
+      <ion-input>
+
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>留意信息</ion-label>
+  <!-- <textarea class="input-textarea" name="" id="" cols="30" rows="10" placeholder='输入内容'></textarea> -->
+<!-- </ion-item>
+  </ion-list>
+  <textarea class="input-textarea" name="" id="" cols="30" rows="10" placeholder='输入内容'></textarea>
+
+</ion-content> -->-->
